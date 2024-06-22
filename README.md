@@ -56,10 +56,11 @@ Use Cases:
 
 Additional Functionality
 
-  Balance Inquiry: The contract provides a public mapping balances that allows anyone to query the balance of any address.
-  Total Supply Inquiry: The contract provides a public variable totalSupply that allows anyone to query the total supply of NTK.
+  * Balance Inquiry: The contract provides a public mapping balances that allows anyone to query the balance of any address.
+  * Total Supply Inquiry: The contract provides a public variable totalSupply that allows anyone to query the total supply of NTK.
 
-Security Considerations
+Security Considerations:
+   
    The mint function can be called by anyone, which means that anyone can increase the total supply of NTK. This may not be desirable in a real-world scenario, where token creation should be restricted to a specific authority.
     The burn function can be called by anyone, which means that anyone can decrease the balance of an address. This may not be desirable in a real-world scenario, where token destruction should be restricted to the owner of the address or a specific authority.
     The contract does not implement any access control mechanisms, which means that anyone can call the mint and burn functions. This may not be desirable in a real-world scenario, where token management should be restricted to authorized parties.
